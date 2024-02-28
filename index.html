@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadoras.js"></script>
+    <title>Calculadora de Electrónica</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO DE LA PÁGINA WEB -->
+    <header>
+        <h1 class="h1_titulo_encabezado">CALC ELECTRONIC</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto - Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CUERPO DE LA PAGINA WEB -->
+    <main>
+        <div class="h1_titulo1">
+            <h1>Cálculos electrónicos</h1>
+        </div>
+
+        <div class="cajas_1"> <!--Cajas flexibles para dividir las cajas_1 y estén una al lado de otra-->
+
+            <div class="caja_calculadora_1"> <!--Aquí se colocan el x%-->
+                <div> <!--Divide caja calculadora para poner los recursos uno debajo de otro-->
+                    <h2 class="h2_titulo_caja">Caculadora de Potencia</h2>
+                    <div class="imagen">
+                        <img src="img/potencia.png" alt="">
+                    </div>
+                </div>
+                <!-------------- P por ley de Ohm -------------->
+                <form>
+                    <label for="voltaje_P">Voltaje [V]:</label>
+                    <input type="  text" id="voltaje_P" name="voltaje_P" class="voltaje_P"><br>
+                    <label for="corriente_P">Corriente [A]:</label>
+                    <input type="  text" id="corriente_P" name="corriente_P" class="corriente_P"><br>
+                    <button type="button" onclick="calc_P_ohm()">Calcular Potencia</button>
+                    <form>
+                        <div id="resultado_P" class="resultado_P"></div>
+                    </form>
+                </form>
+            </div>
+
+            <div class="caja_calculadora_2">
+                <div>
+                    <h2 class="h2_titulo_caja">Caculadora de Resistencia</h2>
+                    <div class="imagen">
+                        <img src="img/resistencia.png" alt="">
+                    </div>
+                </div>
+                <!-------------- R por ley de Ohm -------------->
+                <form>
+                    <label for="voltaje_R">Voltaje [V]:</label>
+                    <input type="  text" id="voltaje_R" name="voltaje_R" class="voltaje_R"><br>
+                    <label for="corriente_R">Corriente [A]:</label>
+                    <input type="  text" id="corriente_R" name="corriente_R" class="corriente_R"><br>
+                    <button type="button" onclick="calc_res_ohm()">Calcular Resistencia</button>
+                    <form>
+                        <div id="resultado_R" class="resultado_R"></div>
+                    </form>
+                </form>
+            </div>
+
+            <div class="caja_calculadora_1">
+                <div>
+                    <h2 class="h2_titulo_caja">Caculadora de Corriente</h2>
+                    <div class="imagen">
+                        <img src="img/corriente.png" alt="">
+                    </div>
+                </div>
+                <!-------------- I por ley de Ohm -------------->
+                <form>
+                    <label for="voltaje_I">Voltaje [V]:</label>
+                    <input type="  text" id="voltaje_I" name="voltaje_I" class="voltaje_I"><br>
+                    <label for="resistencia_I">Resistencia [Ohm]:</label>
+                    <input type="  text" id="resistencia_I" name="resistencia_I" class="resistencia_I"><br>
+                    <button type="button" onclick="calc_I_ohm()">Calcular Corriente</button>
+                    <form>
+                        <div id="resultado_I" class="resultado_I"></div>
+                    </form>
+                </form>
+            </div>
+
+            <div class="caja_calculadora_2">
+                <div>
+                    <h2 class="h2_titulo_caja">Caculadora de Voltaje</h2>
+                    <div class="imagen">
+                        <img src="img/voltaje.png" alt="">
+                    </div>
+                </div>
+                <!-------------- V por ley de Ohm -------------->
+                <form>
+                    <label for="corriente_V">Corriente [A]:</label>
+                    <input type="  text" id="corriente_V" name="corriente_V" class="corriente_V"><br>
+                    <label for="resistencia_V">Resistencia [Ohms]:</label>
+                    <input type="  text" id="resistencia_V" name="resistencia_V" class="resistencia_V"><br>
+                    <button type="button" onclick="calc_V_ohm()">Calcular Corriente</button>
+                    <form>
+                        <div id="resultado_V" class="resultado_V"></div>
+                    </form>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="cajas_2"> <!--Cajas flexibles para dividir las cajas_2 y estén una al lado de otra-->
+        </div>
+
+    </main>
+
+    <!-- PIE DE LA PÁGINA WEB -->
+    <footer>
+        <div class="footer">
+            <p>Email:
+                <a href="https://mail.google.com/mail/u/0/?tab=
+                        rm&ogbl#inbox?compose=GTvVlcSBmXNrXqSkrsGdDR
+                        cBnnqfTHXRbqfGTKhjnLFLpSCPbHtptkmZXvmtKznCQB
+                        FqfCcDTtGSF">bmontero912@gmail.com</a>
+            </p>
+            <p class="p_footer"> Telefono: +593 94615176</p>
+            <p class="p_footer"> Desarrolo web - Bryan Montero &copy;</p>
+            <p>Todos los derechos reservados - 2023</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

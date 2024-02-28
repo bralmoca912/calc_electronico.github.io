@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+}
+
+/***** ENCABEZADO DE LA PÁGINA WEB *****/
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(30, 255, 180);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+
+.h1_titulo_encabezado {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+ul {
+    margin-right: 10px;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+}
+
+ul li a:hover {
+    font-size: 18px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+/***** PIE DE LA PÁGINA WEB *****/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+}
+
+
+/************************* CUERPO DEL INDEX *************************/
+
+/***** CUERPO DE LA PÁGINA WEB *****/
+
+.h1_titulo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    font-size: 26px;
+    padding-top: 80px;
+    color: rgb(154, 97, 43);
+}
+
+.cajas_1,
+.cajas_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 50px;
+    margin: 50px;
+
+}
+
+.caja_calculadora_1 {
+    border-radius: 8px;
+    height: 400px;
+    box-shadow: 5px 5px 10px 5px #000;
+    background-color: white;
+}
+
+.caja_calculadora_2 {
+    border-radius: 8px;
+    height: 400px;
+    box-shadow: 5px 5px 10px 5px #000;
+    background-color: white;
+}
+
+.h2_titulo_caja {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #5C5B5B;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/***** Java Script *****/
+form {
+    width: 350px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #5FE1CF;
+    border-radius: 10px;
+    margin: auto;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 15px;
+    color: rgb(23, 19, 19);
+}
+
+button {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #7434F2;
+}
+
+input {
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 180px;
+    height: 25px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.resultado_P,
+.resultado_V,
+.resultado_R,
+.resultado_I {
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: #5FE1CF;
+    border-radius: 10px;
+    width: 120px;
+    height: 20px;
+    padding: 2px;
+    padding-left: 22px;
+    font-size: 17px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+/************************* CUERPO DEL CONTACTO *************************/
+
+.h2_titulo_quienes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.quienes_somos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.h2_titulo_informacion {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.informacion_contanto {
+    margin: 20px;
+}
